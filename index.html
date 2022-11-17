@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--Set Language-->
+<html lang="en">
+
+<head>
+    <!--Define the character set used-->
+    <meta charset="UTF-8">
+    <!--https://www.thoughtco.com/xua-compatible-meta-tag-3469059-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Define keywords for search engines-->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!--Define a description of your web page-->
+    <meta name="description" content="Exercises for my education">
+    <!--Define the author of a page-->
+    <meta name="author" content="Bart Victor Loots">
+    <!--Setting the viewport to make your website look good on all devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link external stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--favicon: https://www.w3schools.com/html/html_favicon.asp-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <!--Define the title of your webpage-->
+    <title>Oefening 10</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Oefening 10</h1>
+        </header>
+        <main>
+            <div class="blokjesveld">
+                <div class="blokje"></div>
+                <div class="blokje"></div>
+                <div class="blokje"></div>
+                <div class="blokje"></div>
+            </div>
+        </main>
+        <footer>
+            <h6>Bart Victor Loots &copy 2022</h6>
+            <h6>Webanimatie2 @ Encora</h6>
+        </footer>
+    </div>
+
+    <script>
+        var blokjes = document.querySelectorAll(".blokje");
+        console.log(blokjes);
+        blokjes[0].innerHTML = "Javascript";
+        blokjes[1].innerHTML = "For";
+        blokjes[2].innerHTML = "The";
+        blokjes[3].innerHTML = "Win";
+
+        var namen = ["Johnny", "Rico", "Ans", "Sicko94", "Peggy", "Barbie4ever"];
+        var leeftijden = [4, 7, 3];
+        var hoeden = [true, true, false, true, false];
+        console.log("a = " + namen[2]);
+        console.log("b = " + leeftijden[2]);
+        console.log("c = " + hoeden[4]);
+        console.log("d = " + hoeden.length);
+        console.log("e = " + hoeden[leeftijden.length]);
+        console.log("f = " + namen[leeftijden.length]);
+        console.log("g = " + namen[namen.length - 1]);
+        console.log("h = " + namen[leeftijden[2] + 1]);
+        console.log("i = " + hoeden[leeftijden[0] / 2]);
+
+        if (hoeden[2] != false) {
+            console.log("A");
+        } else {
+            console.log("B");
+        }
+
+        if (hoeden.length > namen.length) {
+            console.log("A");
+        } else {
+            console.log("B");
+        }
+    </script>
+
+</body>
+
+</html>
